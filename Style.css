@@ -1,4 +1,5 @@
-﻿body {
+﻿/*Initial formatting/styling*/
+body {
     color: rebeccapurple;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -8,6 +9,7 @@
     margin-right: auto;
     background-color: lightblue;
 }
+/*change link colors on interaction from default, important especially for headers!*/
 a:link {
     color: indigo;
     text-decoration: none;
@@ -17,19 +19,21 @@ a:visited {
 }
 a:hover {
     color: blue;
-
 }
+/*honestly forgot why I added this, I guess it's just to flex on ya'll ;P*/
 section {
     display: flex;
 }
 h1 {
     font-size: 2.5rem;
 }
+/*formatting to make me not take up too much space*/
 #bigMe {
     max-width: 75%;
     height: auto;
     justify-items: center;
 }
+/*Social Decor*/
 #social {
     max-width: 100%;
     height: auto;
@@ -43,11 +47,13 @@ h1 {
     align-items: center;
     border-radius: 1rem;
 }
+/*size socials to fit within most browsers*/
 .socials {
     max-width: 16%;
     height: auto;
     display: inline-block;
 }
+/*size to make socials larger when hovered over*/
 .socials:hover {
     max-width:19%;
     height: auto;
@@ -57,6 +63,7 @@ h1 {
     align-items: center;
     border-radius: 3rem;
 }
+/*Header Formatting*/
 header {
     background-color: lightgray;
     font-size: 1rem;
@@ -68,10 +75,12 @@ header {
 header:hover {
     height: 2.5rem;
     text-align: center;
+    align-items: center;
 }
 header:hover h2 {
     text-align: center;
 }
+/*stand out tabs on hover*/
 .tabs:hover {
     background-color: ghostwhite;
     font-size: 1.7rem;
@@ -81,30 +90,36 @@ header:hover h2 {
     align-items: center;
     border-radius: 2rem;
 }
+/*visual acuity ya'll*/
 #all {
     padding-top: 0.01rem;
     margin-left: 1rem;
     margin-right: 1rem;
     background-color: aliceblue;
 }
+/*Make certs fit within table*/
 .certs img {
     max-width: 100%;
     height: auto;
 }
+/*Heading formatting*/
 th {
     font-weight: bolder;
     cursor: pointer;
 }
+/*Table borders*/
 table, th, td {
     max-width: 100%;
     height: auto;
     border: 1px solid indigo;
     padding: 0.2rem;
 }
+/*Centers Table*/
 table {
     display: inline-table;
     align-items: center;
 }
+/*Padding for text so it is not right next to edges*/
 h1, h2, p {
     padding-left: 0.2rem;
     padding-right: 0.2rem;
