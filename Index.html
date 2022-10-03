@@ -21,35 +21,40 @@
     <link href="Style.css" rel="stylesheet" />
     <!--website icon, my face-->
     <link rel="icon" type="image/x-icon" href="Images/SmallerMe.png" alt="Small picture of Trey Jacobsen" />
+    <!--Mobile Compatibility-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--jquery script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--Primary script for website-->
+    <script src="Script.js"></script>
 </head>
 <body>
     <!--Div containing all content-->
     <div id="all">
         <div id="spacer"></div>
         <header>
-            <h2><a href="Index.html" id="home" class="tabs" rel="canonical"> Home </a>|<a href="Certificates.html" id="certificates" class="tabs" rel="next"> Certificates </a>|<a href="Projects.html" id="projects" class="tabs" rel="next"> Projects </a></h2>
+            <h2><a href="Index.html" id="home" class="tabs" rel="canonical"> Home </a>|<a href="Certificates.php" id="certificates" class="tabs" rel="next"> Certificates </a>|<a href="Projects.html" id="projects" class="tabs" rel="next"> Projects </a></h2>
         </header>
-        <h1>Trey Jacobsen:<br />Computer Programmer</h1>
+        <h1 id="me">Trey Jacobsen:</h1><h1>Computer Programmer</h1>
         <!--Image of me provided by Billings Public Library where I worked as a Teen TECH Lab mentor!-->
         <div><img src="Images/Document.jpg" id="bigMe" alt="Large picture of Trey Jacobsen" /></div>
-        <p style="font-size:1.2rem">Currently seeking employment!<br /></p>
-        <p>
-            I have been learning computer programming since 2014 and I have always had a passion for computers.
-            <br /><br />Feel free to contact me through
-            <a href="https://www.linkedin.com/in/treyjacobsen" target="_blank" rel="noreferrer noopener">Linkedin</a> or email me at<br /><a href="mailto: treyjacobsen@gmail.com" target="_blank" rel="noreferrer noopener nofollow">treyjacobsen@gmail.com</a><br />
+        <p><strong>Currently seeking employment!</strong><br /></p>
+        <p id="aboutMe">
+            I have been learning computer programming since 2014 and have always had a passion for computer software.
+            <br /><br /> Feel free to contact me through
+            <a href="https://www.linkedin.com/in/treyjacobsen" target="_blank" rel="noreferrer noopener">Linkedin</a> or email me at <a href="mailto: treyjacobsen@gmail.com" target="_blank" rel="noreferrer noopener nofollow">treyjacobsen@gmail.com</a><br />
         </p>
         <br />
+        <a href="#top"><div id="toTop" hidden>^Back to Top</div></a>
         <!--My Social Media Pages, logos found through Google and not for commercial use.-->
         <div id="social">
             <p>
-                <a href="https://www.linkedin.com/in/treyjacobsen" target="_blank" rel="noreferrer noopener"><img class="socials" src="Images/Linkedin.png" alt="Linkedin Logo" /></a> |
-                <a href="https://www.github.com/lonefullmetal" target="_blank" rel="noreferrer noopener"><img class="socials" src="Images/GitHub.png" alt="GitHub Logo" /></a> |
-                <a href="https://www.sololearn.com/profile/1035886" target="_blank" rel="noreferrer noopener"><img class="socials" src="Images/SoloLearn.png" alt="SoloLearn Logo" /></a> |
+                <a href="https://www.linkedin.com/in/treyjacobsen" target="_blank" rel="noreferrer noopener"><img class="socials" src="Images/Linkedin.png" alt="Linkedin Logo" /></a>
+                <a href="https://www.github.com/lonefullmetal" target="_blank" rel="noreferrer noopener"><img class="socials" src="Images/GitHub.png" alt="GitHub Logo" /></a>
+                <a href="https://www.sololearn.com/profile/1035886" target="_blank" rel="noreferrer noopener"><img class="socials" src="Images/SoloLearn.png" alt="SoloLearn Logo" /></a>
                 <a href="https://www.twitter.com/TreyJacobsen" target="_blank" rel="noreferrer noopener"><img class="socials" src="Images/Twitter.png" alt="Twitter Logo" /></a>
             </p>
         </div>
     </div>
-    <!--Primary script for website-->
-    <script src="Script.js"></script>
 </body>
 </html>

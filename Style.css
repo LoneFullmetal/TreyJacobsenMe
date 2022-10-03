@@ -4,10 +4,9 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     max-width: 95%;
-    height: auto;
+    background-color: lightblue;
     margin-left: auto;
     margin-right: auto;
-    background-color: lightblue;
 }
 /*change link colors on interaction from default, important especially for headers!*/
 a:link {
@@ -25,7 +24,11 @@ section {
     display: flex;
 }
 h1 {
-    font-size: 2.5rem;
+    padding: 0;
+    font-size: 4vmax;
+}
+#me {
+    font-size: 5vmax;
 }
 /*formatting to make me not take up too much space*/
 #bigMe {
@@ -36,91 +39,169 @@ h1 {
 /*Social Decor*/
 #social {
     max-width: 100%;
-    height: auto;
+    height: 7vmax;
     background-size: contain;
     background-color: silver;
     background-size: contain;
-    padding: 0 1rem;
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
     display: inline-flex;
     align-items: center;
-    border-radius: 1rem;
+    box-shadow: inset 0px 0px 0px 1px indigo;
+    line-height: 5vmax;
+    transition-delay: 0.2s;
+}
+#social:hover {
+    padding: 2px 1vmax 2px 1vmax;
+    transition-delay: 0.2s;
+}
+#social p:nth-child(1):hover {
+    padding: 4px 0 0 0;
+}
+#social p:nth-child(3):hover {
+    margin: 0 0 5px 0;
+}
+#social p:nth-child(4):hover {
+    margin: 0 0 10px 0;
+}
+p {
+    font-size: 2.5vmax;
+}
+#aboutMe {
+    text-align: left;
+    font-size: 2vmax;
+    margin-left: 2vmax;
+    margin-right: 2vmax;
 }
 /*size socials to fit within most browsers*/
 .socials {
-    max-width: 16%;
+    max-width: 18%;
     height: auto;
     display: inline-block;
+    padding: 1vmax;
+    -webkit-filter: drop-shadow(3px 3px 2px #2d044d);
+    filter: drop-shadow(3px 3px 2px #2d044d);
+    transition-delay: 0.2s;
 }
 /*size to make socials larger when hovered over*/
 .socials:hover {
-    max-width:19%;
+    max-width: 20%;
     height: auto;
-    background-color: lightcyan;
-    padding: 0 2rem;
+    padding: 2px 1vmax 2px 1vmax;
     display: inline-flex;
     align-items: center;
-    border-radius: 3rem;
+    border-radius: 1px;
+    -webkit-filter: drop-shadow(5px 5px 4px #2d044d);
+    filter: drop-shadow(5px 5px 4px #2d044d);
+    transition-delay: 0.1s;
 }
 /*Header Formatting*/
 header {
-    background-color: lightgray;
-    font-size: 1rem;
+    /*color: salmon */ /*Test colors*/
+    background-color: silver;
+    vertical-align: middle;
+    text-shadow: 3px 3px 7px #641085;
+    font-size: 3vw;
     width: 100%;
-    font-weight: bolder;
-    height: 2rem;
-    border-radius: 2rem;
+    height: 6vmax;
+    line-height: 5vmax;
+    box-shadow: inset 0px 0px 0px 1px indigo;
+    transition-delay: 0.5s;
 }
 header:hover {
-    height: 2.5rem;
-    text-align: center;
+    text-shadow: 1px 1px 5px #641085;
+    height: 8vmax;
+    vertical-align: middle;
     align-items: center;
+    line-height: 7vmax;
+    transition-delay: 0.2s;
 }
-header:hover h2 {
+.tabs {
+    align-items: center;
     text-align: center;
+    vertical-align: middle;
+    padding: 0 1vmax 0 1vmax;
+    transition-delay: 0.1s;
 }
 /*stand out tabs on hover*/
 .tabs:hover {
     background-color: ghostwhite;
-    font-size: 1.7rem;
+    font-size: 5vw;
     font-weight: bolder;
-    height: 2.5rem;
     display: inline-flex;
     align-items: center;
-    border-radius: 2rem;
+    text-shadow: 2px 2px 5px #410c75;
+    box-shadow: inset 0px 0px 0px 1px indigo;
+    border-radius: 1rem;
+    padding: 0 2vmax 0 2vmax;
+    transition-delay: 0.2s;
 }
 /*visual acuity ya'll*/
 #all {
-    padding-top: 0.01rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1vmax;
+    margin-right: 1vmax;
     background-color: aliceblue;
+    box-shadow: 0px 0px 100px 2px #410c75;
 }
 /*Make certs fit within table*/
 .certs img {
     max-width: 100%;
     height: auto;
 }
+.certs img:hover {
+    box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+}
 /*Heading formatting*/
 th {
     font-weight: bolder;
     cursor: pointer;
+    background-color: aquamarine;
+    font-size: 2.2vmax;
+    transition-delay: 0.1s;
+}
+th:hover {
+    font-size:2.5vmax;
+    transition-delay: 0.1s;
+    box-shadow: inset 0px 0px 7px 1px darkturquoise;
 }
 /*Table borders*/
+td {
+    font-size: 2vmax;
+}
 table, th, td {
-    max-width: 100%;
-    height: auto;
     border: 1px solid indigo;
     padding: 0.2rem;
 }
 /*Centers Table*/
 table {
+    max-width: 100%;
+    height: auto;
     display: inline-table;
     align-items: center;
+    border-collapse: collapse;
 }
 /*Padding for text so it is not right next to edges*/
 h1, h2, p {
     padding-left: 0.2rem;
     padding-right: 0.2rem;
+}
+/*for going to top of page!*/
+#toTop {
+    z-index: 99 !important;
+    background-color: blueviolet;
+    color: cyan;
+    font-size: 1.5vmax;
+    padding: 1vmax;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 2vmax;
+    width: auto;
+    box-shadow: inset 0px 0px 0px 2px indigo;
+    transition-delay: 0.1s;
+}
+#toTop:hover {
+    height: 3vmax;
+    width: auto;
+    font-size: 2vmax;
+    transition-delay: 0.1s;
 }
